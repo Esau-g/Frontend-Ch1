@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+:root {
+    --bgcolor: #D5E1EF;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +12,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #D5E1EF;
+    background-color: var(--bgcolor);
     font-family: "Outfit", sans-serif;
     display: flex;
     justify-content: center;
@@ -77,7 +81,7 @@ p {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
     body {
         padding: 16px;
@@ -99,6 +103,6 @@ p {
 
 @media (max-width: 480px) {
     img {
-        max-width: 260;
+        max-width: 260px;
     }
 }
